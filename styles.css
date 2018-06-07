@@ -1,0 +1,205 @@
+.body{
+	
+}
+
+.head {
+	
+}
+
+.head-logo {
+	width: 100%
+    
+}
+
+.head-image{
+	padding-top: 10px;
+	position:relative;
+	top: 25px;
+	float: left;
+	display: inline-block; /*to set width height if needed*/
+	border-radius: 50%; /*makes logoimage circle*/ 
+	
+}
+
+.head-text{
+	color:#170616;
+	padding:5px 5px 0px;
+	margin-bottom: -20px; /*margins used to create space above and below text*/
+	margin-top: -40px;
+
+
+
+}
+
+.head-title{
+	font-family: unset;
+	color:#170616;
+	font-style: italic;
+	font-size: 4vw; /* means 6% of viewport width of 100%, increases as viewport width increases on page*/
+	text-align: right;
+	width: 100%; /* below properties and value are used to make sure font does not get cut off on web page as viewport extends*/
+    white-space: nowrap; /* need this property to get text-overflow */
+    position:relative;
+    overflow:hidden;
+    bottom:40px; 
+
+    	
+}
+
+.head-subtitle{
+	
+	font-family: unset;
+	color:#170616;
+	font-style: italic;
+	font-size: 3.5vw;
+	text-align:right;
+	width: 100%; /* below properties and value are used to make sure font does not get cut off on web page as viewport extends*/
+    white-space: nowrap; /* need this property to get text-overflow */
+    position:relative;
+    overflow: hidden;
+    bottom:40px;
+    margin-left: 5px;
+
+
+	
+	
+}
+
+/* END OF FIRST CONTAINER */
+
+
+.main-body{
+	width: 100%
+
+
+}
+
+.main-image{
+	position:relative;
+    margin-bottom:20px ; /*margins used to create space above and below the image*/
+	width: 100%;
+
+}
+
+.main-featurework{
+
+	width:100%;
+
+}
+
+.main-title{
+	
+	font-family: unset;
+	color:#000000;
+	font-style: italic;
+	text-align: center;
+	
+
+}
+
+.featuresbox {
+	width:100%;
+		
+}	
+
+.features-display{
+	width: 100%	
+
+			
+}
+
+/*.features-display1,2,3{
+	display: flex; /* layout tool for my web page layout*/
+	/*flex-wrap: wrap;/*for the content to wrap over next line, column drop responsive pattern*/
+	/*width: 100%;*/
+
+
+.featurespic{
+	width: 100%;
+	height:auto;
+    
+
+}
+
+.features-title{
+
+	font-family: unset;
+	font-size: 6vw;
+	line-height: 1.25em;
+	color:#170616;
+	font-style: italic;
+	text-align: center;
+	padding-top: 35px
+	
+
+
+}
+
+.features-text{
+	text-align: center;
+
+}
+	
+
+
+.features-link{
+	text-decoration: none;
+	color:#139FFD;
+	font-family: sans-serif;
+	font-style: italic;
+	text-align: center;
+	cursor: pointer;
+	padding-bottom: 35px
+
+}
+
+.button1, .button2, .button3{
+	position: relative;
+    background-color:#82BBE4;
+    font-size: 1em;
+    color:#FFFFFF;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+   	text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50% /*makes button link circular*/
+	
+}
+
+.button1:hover {background-color: #B6E87F} /* button hovers a different color when clicked*/
+.button2:hover {background-color: #E1AE54} /* button hovers a different color when clicked*/
+.button3:hover {background-color: #E1E552} /* button hovers a different color when clicked*/
+
+
+.contact-info{
+	
+}
+
+.myinfo{
+	
+}
+
+.connectme{
+	
+	font-family: unset;
+	font-size: 20px;
+	color: #FFFFFF;
+	font-style: italic;
+	height: 60px;
+  	width: 100px;
+  	background-color:#E1926A;
+  	position: relative;
+    padding: 15px;
+  	text-align: center;
+   	text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50% /*makes button link circular*/
+}
+
+.connectme:hover {background-color: #DF5ADE} /* button hovers a different color when clicked*/
+
+
+

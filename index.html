@@ -1,0 +1,121 @@
+<!--mockup = markup = create html content with responsive css-->
+<!--use simple naming convention, easily read and understood-->
+<!--divide mockup into containers: (image, title, text) and main - sections- article: (heading, body, conlusion)-->
+<!--add ID/classes for styling markup - try to use more class and less ID-->
+<!--add images saved in image folder-->
+<!--make markup responsive : using flexbox, grid, @ media query-->
+
+<!--sources used: websites below for images 25, 12,3,16,13 link under each image-->
+<!--sources used: Joe Mesot portfolio project web series you tube links for reference:
+	video1: https://www.youtube.com/watch?v=HmYPqwSefoA&t=3s
+	video2: https://www.youtube.com/watch?v=4_CxusDXxqk
+	video3: https://www.youtube.com/watch?v=il3JC5lM9eU&t=1s
+	video4: https://www.youtube.com/results?search_query=how+to+create+column+drop+responsive+pattern+in+css -->
+<!--sources used: www.w3schools.com, csstricks.com, developer.mozilla.org,stackoverflow.com,http://html5doctor.com/	
+    the-article-element/,https://, www.sitepoint.com/community/t/html-5-when-to-use-article-aside-section-div/5742, https://css-tricks.com/forums/topic/image-resizing-with-flexbox-ie/-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head> <!--This is a basic html structure-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shaifali Kanji's Portfolio Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--tells browser width of screen is "fullwidth" on mobile, desktop or any device. The website user visiting render html and css as styled-->
+	<link rel="stylesheet" type="text/css" media="screen" href="styles.css"/> <!--links css styles, browser renders code, value "text/css" means content is CSS, value media=screen means html can be displayed on tablet, computer or phone device.-->
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/> <!--responsive css-->
+
+</head> 
+		
+
+<body> <!--mockup - break down into container, logo, header, header text--> 
+	<header class="head"><!--inside parent container (header) add 2 part containers - left (logo) /right(header and header text) including different elements (div=img, div=h1, p)-->
+		
+		<div class="head-logo"><!--left logo container child of header-->
+			<img src="images/image25.jpg" alt="socialmedia logo" class="head-image" width="150px" height="150px" />
+		</div>	
+			<!--Source: Image25 link address:https://www.microtekcorporation.com/2017/06/why-are-social-media-channels-important/-->
+		
+		
+
+		<div class="head-text"> <!--header and header text container child of header-->
+			<h1 class="head-title">Shaifali Kanji</h1>
+			<p class="head-subtitle"> Network Engineer | Front-End Web Developer</p>
+		</div>
+		
+	</header> 
+	
+<!--###############################  END OF FIRST CONTAINER  #########################################-->
+
+
+<!--main tag below holds the entire content of the mockup: hero image, featured work images inside container-->
+	
+	<main class="main-body"> <!--main content of the html document-->
+		<img src="images/image12.png" alt="officespace" class="main-image"/>
+
+		<!--Source: Image12 link address:https://www.ambius.com/blog/the-ultimate-guide-to-office-plants/-->
+		
+		<section class="main-featurework"> <!--section tag must be after first child of heading tags eg: the <h1> below, section is not a wrapper, need a heading in it eg (h1)-->
+
+			<h1 class="main-title">Featured Work</h1> <!--sections title--> 
+			
+			<div class="featuresbox"> <!--div holds sections of html document:  holds/ contains below 3 featured works #1-#2-#3 displays can add *for my flexbox-->
+			
+					
+				<article class="features-display1"> <!--inside this div: two text elements h3/p tag and a image, #1 display inside-->
+				<img src="images/slothimage3.jpg" alt="slothpic" class="features-pic" /> <!--for image-->
+				<h2 class="features-title">Animal Card Project</h2> <!--for title-->
+				<p class="features-text"> <a class="button1" href="https://codepen.io/shaifali/pen/xWwXjv" class="features-link">View Project</a> </p> <!--for text-->
+				</article> <!--article above and below shows content as seperate articles-->
+					
+				
+
+				<!--Source: Image3 link address: https://www.youtube.com/watch?v=HylCkaryugk-->
+
+			
+		
+				<article class="features-display2"> <!--inside this div: two text elements h3/p tag and a image, #2 display-->
+				<img src="images/image16.jpg" alt="pixels" class="features-pic" /> <!--for image-->
+				<h2 class="features-title"> Pixel Art Maker Project</h2> <!--for title-->
+				<p class="features-text"> <a class="button2" href="https://codepen.io/shaifali/pen/EEeQXO" class="features-link">View Project</a> </p><!--for text-->
+				</article>
+
+				<!--Source: Image16 link address:https://arachnophobia97.wordpress.com/2015/04/22/unit-19-task-1-pixel/-->
+
+				
+				<article class="features-display3"> <!--inside this div: two text elements h3/p tag and a image, #3 display-->
+				<img src="images/image13.png" alt="robothand" class="features-pic"/> <!--for image-->
+				<h2 class="features-title">Mockup to Markup Project</h2> <!--for title-->
+				<p class="features-text"> <a class="button3" href="https://codepen.io/shaifali/pen/QrRGmb" class="features-link">View Project</a> </p><!--for text-->
+				</article>
+				
+				<!--Source: Image13 link address: https://diginomica.com/2016/09/10/the-robots-are-coming-and-were-all-royally-screwed/-->
+				<!--buttons are just clickable buttons-->
+			
+			
+			</div>
+
+		</section> 
+		 
+	</main>
+
+	<footer class="contact-info">
+			
+			<div class="myinfo">
+			<h1 class="connectme">Let's Connect!</h1>
+			<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+			<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="shaifalikanji"><a class="LI-simple-link" href='https://www.linkedin.com/in/shaifalikanji?trk=profile-badge'>Shaifali Kanji</a>
+			</div>
+
+	</footer>
+
+
+</body>
+</html>
+  
+<!--WRITE UP ALL THE SOURCES USED AT THE START OF THE HTML CONTENT BEFORE SUBMITTING!!!!!!!!-->  
+
+
+

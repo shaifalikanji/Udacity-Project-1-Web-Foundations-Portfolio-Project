@@ -1,0 +1,222 @@
+
+
+img, embed, object, video { max-width: 100%} /*used for iframe eg: youtube video,pdf,flash:not sure if needed here, need to ask*/
+
+/*breakpoints: background color and fonts change when viewport expands on listed pixels*/
+
+@media screen and (min-width:330px) and (max-width:450px) { 
+
+	.head-title{
+		font-size: 5vw;
+	}
+
+	.head-subtitle{
+		font-size: 3vw;
+	}
+
+
+	.features-title{
+		font-size: 5vw;
+	}
+/*.features-display1{
+	
+	width: 25%	
+}
+
+.features-display2{
+	
+	width: 25%;
+}
+
+.features-display3{
+	
+	width: 25%	
+}*/
+		
+}
+
+@media screen and (min-width:450px) { 
+	
+	.head-title{
+		font-size: 4vw;
+
+	}
+	
+	.head-subtitle{
+		font-size: 4vw;
+	}
+
+	.features-title{
+		font-size: 4vw;
+	}
+
+}
+
+@media screen and (min-width:600px) and (max-width:1300px){ /*at 600px we get a FLEXBOX*/
+	
+	.head-title{
+		font-size: 3vw;
+	}
+
+	.head-subtitle{
+		font-size: 2vw;
+
+	}
+
+	.features-title{
+		font-size: 2vw;
+	}
+
+
+	.head{
+		/*justify-content:auto; /* for text/image horizontally*/
+		*align-items: auto; /* for text/image vertically*/
+
+	}
+
+	/*FLEXBOX STARTS HERE*/
+
+	.featuresbox{ /*the parent of flexbox container*/
+		display: flex; /* css property layout: each child below(features-display1-2-3) of this flex item now becomes a flex-box-item,*/
+		margin: 0 auto;
+		align-items: center;
+  		justify-content: center;
+		
+		/*flex-wrap: wrap; for the content to wrap over next line on child container, column drop responsive pattern*/
+		/*overflow: hidden;
+		display: -webkit-flex*/
+		
+
+	}
+	
+
+	/*children of flexbox container above*/
+
+	.features-display1{ /*the children of flexbox container*/
+		margin:0px 0px 25px 25px; /*top, bottom, right, left*/
+		flex-grow:1; /*each child(features-display1-2-3) in container remains same size as other boxes 1:1 ratio*/;
+		/*overflow: hidden;*/
+		width: 100vw;
+		
+	}
+
+	.features-display2{
+		margin:0px 0px 25px 25px; /*top, bottom, right, left*/
+		width:100vw;
+
+	}
+
+
+	.features-display3{
+		margin:0px 0 25px 25px; /*top, bottom, right, left*/
+		margin-right: 0; 
+		width: 100vw;
+
+
+	}
+	
+	.features-pic{
+		flex-shrink:0; /*text does not shrink as viewport increases - text does not wrap*/
+		width: 100vw;
+		margin: 10px 10px 0 0;
+	}
+
+
+/*.features-display1{
+	
+	width: 50%	
+}
+
+.features-display2{
+	
+	width: 50%;
+}
+
+.features-display3{
+	
+	width: 50%	
+}*/
+
+}	
+
+@media screen and (min-width:768px) {
+
+	.features-pic{
+		width:100%;
+	}
+	
+
+	.head-title{
+		font-size: 4vw;
+	}
+
+	.head-subtitle{
+		font-size: 3vw;
+
+	}
+
+	
+	.features-title{
+		font-size: 4vw;
+	}
+
+
+}
+	
+@media screen and (min-width:900px) {
+	
+	body {background-color:#F2EBF8;}
+
+	.features-pic{
+		width:100%;
+	}
+	
+	.head-title{
+		font-size: 4vw;
+	}
+
+	.head-subtitle{
+		font-size: 3vw;
+
+	}
+
+	
+	.features-title{
+		font-size: 4vw;
+	}
+
+}
+
+
+
+@media screen and (min-width:1300px) {
+	
+	body {background-color:#CDEFF1}
+
+	.features-pic{
+		width:100%;
+	}
+
+	
+	.head-title{
+		font-size: 4vw;
+	
+	}
+
+	
+	.head-subtitle{
+		font-size: 3vw;
+
+	}
+
+	.features-title{
+		font-size: 3vw;
+	}
+
+}
+
+
+
+
+
+		
